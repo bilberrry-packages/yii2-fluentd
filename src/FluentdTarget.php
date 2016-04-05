@@ -1,6 +1,6 @@
 <?php
 /**
- * @link      https://github.com/index0h/yii2-log
+ * @link      https://github.com/bilberrry/yii2-fluentd
  * @copyright Copyright (c) 2016 Alex Mukho <alex@bilberrry.com>
  * @license   https://github.com/bilberrry/yii2-fluentd/blob/master/LICENSE
  */
@@ -17,15 +17,33 @@ use yii\log\Logger;
 class FluentdTarget extends \yii\log\Target
 {
 
+    /**
+     * @var string Fluentd host
+     */
     public $host = 'localhost';
+    /**
+     * @var int Fluentd port
+     */
     public $port = 24224;
+    /**
+     * @var array Options for Fluentd client
+     */
     public $options = [];
 
+    /**
+     * @var string Tag format, available placeholders: %date, %timestamp, %level
+     */
     public $tagFormat = 'app.%level';
 
+    /**
+     * @var FluentLogger Fluentd client instance
+     */
     private $_logger;
 
 
+    /**
+     * @inheritdoc
+     */
     public function init()
     {
         parent::init();
@@ -43,6 +61,13 @@ class FluentdTarget extends \yii\log\Target
         $this->_logger->post($this->createTag($this->messages), $messages);
     }
 
+
+    /**
+     * Generating tag name based on $tagFormat
+     *
+     * @param $messages
+     * @return string
+     */
     private function createTag($messages)
     {
         return str_replace(['%date', '%timestamp', '%level'], [
