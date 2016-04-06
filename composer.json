@@ -5,6 +5,13 @@
     "homepage": "https://github.com/bilberrry/yii2-fluentd",
     "license": "MIT",
     "minimum-stability": "dev",
+    "type": "yii2-extension",
+    "authors": [
+        {
+            "name": "Alex Mukho",
+            "email": "alex@bilberrry.com"
+        }
+    ],
     "config": {
         "process-timeout": 1800
     },
