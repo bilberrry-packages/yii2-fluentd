@@ -1,6 +1,6 @@
 # yii2-fluentd
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bilberrry/yii2-fluentd/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bilberrry/yii2-fluentd/?branch=master) [![Packagist](https://img.shields.io/packagist/dt/bilberrry/yii2-fluentd.svg)]() [![Packagist](https://img.shields.io/packagist/v/bilberrry/yii2-fluentd.svg)]() [![GitHub license](https://img.shields.io/github/license/bilberrry/yii2-fluentd.svg)]()
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bilberrry/yii2-fluentd/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bilberrry/yii2-fluentd/?branch=master) [![Packagist](https://img.shields.io/packagist/dt/bilberrry/yii2-fluentd.svg)](https://packagist.org/packages/bilberrry/yii2-fluentd) [![Packagist](https://img.shields.io/packagist/v/bilberrry/yii2-fluentd.svg)](https://packagist.org/packages/bilberrry/yii2-fluentd) [![GitHub license](https://img.shields.io/github/license/bilberrry/yii2-fluentd.svg)](https://github.com/bilberrry/yii2-fluentd)
 
 Logging with Fluentd for Yii2
 
